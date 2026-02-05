@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scooter Details | Trishan Motors</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo"><span>TM</span></div>
+      <div>
+        <div style="font-size:15px">Trishan Motors</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.65);font-weight:700">EV Scooters • Akola</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Scooters</a>
+      <a href="emi.html">EMI</a>
+      <a href="book.html">Test Ride</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, I want to inquire about EV Scooters in Akola.')">
+      💬 WhatsApp
+    </button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Scooter Details</h2>
+        <p>Premium specifications + test ride booking</p>
+      </div>
+      <a class="btn btn-outline" href="models.html">← Back to Scooters</a>
+    </div>
+
+    <div id="detailsWrap"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <div class="logo"><span>TM</span></div>
+        <div style="font-weight:900">Trishan Motors</div>
+      </div>
+      <p>Premium EV Scooters showroom in Akola.</p>
+      <small>© 2026 Trishan Motors. All rights reserved.</small>
+    </div>
+    <div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Need Help?</h3>
+        <p style="margin:0"><b>Call:</b> 7796700733</p>
+        <div style="margin-top:10px">
+          <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, I need help with scooter details and booking.')">
+            💬 WhatsApp Support
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast"><b>Title</b><span>Message</span></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

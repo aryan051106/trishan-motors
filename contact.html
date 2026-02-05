@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Trishan Motors</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo"><span>TM</span></div>
+      <div>
+        <div style="font-size:15px">Trishan Motors</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.65);font-weight:700">EV Scooters • Akola</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Scooters</a>
+      <a href="emi.html">EMI</a>
+      <a href="book.html">Test Ride</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, I want to visit your EV showroom in Akola.')">
+      💬 WhatsApp
+    </button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Contact Trishan Motors</h2>
+        <p>Akola EV Scooter Showroom</p>
+      </div>
+      <a class="btn btn-outline" href="models.html">Browse Scooters</a>
+    </div>
+
+    <div class="detail-grid">
+
+      <div class="card">
+        <h3 style="margin-top:0">Send Inquiry</h3>
+        <form id="contactForm" class="form">
+          <label>Your Name</label>
+          <input id="c_name" class="input" placeholder="Enter your name" required>
+
+          <label>Your Phone</label>
+          <input id="c_phone" class="input" placeholder="10-digit number" required>
+
+          <label>Your Message</label>
+          <textarea id="c_msg" class="input" placeholder="Write your message..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Inquiry + WhatsApp</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">Showroom Details</h3>
+        <p style="margin:0;line-height:1.8;color:var(--muted)">
+          <b style="color:#fff">Showroom:</b> Trishan Motors <br>
+          <b style="color:#fff">City:</b> Akola <br>
+          <b style="color:#fff">Phone:</b> 7796700733 <br><br>
+          <b style="color:#fff">Hours:</b> 10:00 AM – 8:00 PM <br>
+        </p>
+
+        <hr class="sep">
+
+        <h3 style="margin:0 0 10px">Map</h3>
+        <p style="color:var(--muted);margin:0 0 10px">Add your showroom address later easily.</p>
+
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.10)">
+          <iframe
+            src="https://maps.google.com/maps?q=Akola&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="280"
+            style="border:0"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-outline" onclick="openWhatsApp('Hi Trishan Motors, I want your showroom location in Akola.')">📍 Location</button>
+          <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, please call me for EV scooter inquiry.')">📞 Request Call</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <div class="logo"><span>TM</span></div>
+        <div style="font-weight:900">Trishan Motors</div>
+      </div>
+      <p>EV scooters showroom in Akola with booking, EMI and WhatsApp support.</p>
+      <small>© 2026 Trishan Motors. All rights reserved.</small>
+    </div>
+    <div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Quick Contact</h3>
+        <p style="margin:0"><b>Phone:</b> 7796700733</p>
+        <p style="margin:0"><b>Location:</b> Akola</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast"><b>Title</b><span>Message</span></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

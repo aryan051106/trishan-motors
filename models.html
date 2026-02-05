@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scooters | Trishan Motors</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo"><span>TM</span></div>
+      <div>
+        <div style="font-size:15px">Trishan Motors</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.65);font-weight:700">EV Scooters • Akola</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Scooters</a>
+      <a href="emi.html">EMI</a>
+      <a href="book.html">Test Ride</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, I want to inquire about EV Scooters in Akola.')">
+      💬 WhatsApp
+    </button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>EV Scooters</h2>
+        <p>Search, filter and choose your scooter</p>
+      </div>
+      <a class="btn btn-outline" href="book.html">Book Test Ride</a>
+    </div>
+
+    <div class="toolbar">
+      <input class="input" id="searchInput" placeholder="Search scooter name / brand..."/>
+      <select class="input" id="brandFilter">
+        <option value="all">All Brands</option>
+      </select>
+      <select class="input" id="sortSelect">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="range-high">Range: High to Low</option>
+      </select>
+    </div>
+
+    <div id="modelsGrid" class="models-grid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">
+        <div class="logo"><span>TM</span></div>
+        <div style="font-weight:900">Trishan Motors</div>
+      </div>
+      <p>Premium EV Scooters showroom in Akola. Book a test ride and buy easily via WhatsApp.</p>
+      <small>© 2026 Trishan Motors. All rights reserved.</small>
+    </div>
+    <div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Quick Contact</h3>
+        <p style="margin:0"><b>Phone:</b> 7796700733</p>
+        <p style="margin:0"><b>Location:</b> Akola</p>
+        <div style="margin-top:10px">
+          <button class="btn btn-primary" onclick="openWhatsApp('Hi Trishan Motors, I want to check availability of EV scooters.')">
+            💬 WhatsApp Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast"><b>Title</b><span>Message</span></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
